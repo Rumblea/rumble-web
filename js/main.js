@@ -10,6 +10,6 @@ $(document).ready(function () {
     var textarea = $(".contact-textarea").offset().top;
 
     $(".main a").click(function(){
-    	$(".html,body").animate({scrollTop:textarea},500);
+    	$(".html,body").stop().animate({scrollTop:textarea},500);
     });
 });
